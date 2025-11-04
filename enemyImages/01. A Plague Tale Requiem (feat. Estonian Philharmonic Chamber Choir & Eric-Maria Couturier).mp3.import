@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmsaqumy7aseh"
+path="res://.godot/imported/01. A Plague Tale Requiem (feat. Estonian Philharmonic Chamber Choir & Eric-Maria Couturier).mp3-0ab861c9956491619822f34ad9843d07.mp3str"
+
+[deps]
+
+source_file="res://enemyImages/01. A Plague Tale Requiem (feat. Estonian Philharmonic Chamber Choir & Eric-Maria Couturier).mp3"
+dest_files=["res://.godot/imported/01. A Plague Tale Requiem (feat. Estonian Philharmonic Chamber Choir & Eric-Maria Couturier).mp3-0ab861c9956491619822f34ad9843d07.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

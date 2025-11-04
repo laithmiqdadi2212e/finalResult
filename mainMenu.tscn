@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://draf78mtt1yh8"]
+
+[ext_resource type="Script" uid="uid://dmn311hg6ircy" path="res://main_menu.gd" id="1_83s16"]
+[ext_resource type="Texture2D" uid="uid://tyy6wy7djtj0" path="res://enemyImages/finalBackground.png" id="1_w7d22"]
+[ext_resource type="AudioStream" uid="uid://bmsaqumy7aseh" path="res://enemyImages/01. A Plague Tale Requiem (feat. Estonian Philharmonic Chamber Choir & Eric-Maria Couturier).mp3" id="2_w7d22"]
+[ext_resource type="Script" uid="uid://c15etlqlsgcbu" path="res://audio.gd" id="4_wc2lj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MainBackground" type="Sprite2D" parent="."]
+position = Vector2(688.74994, 366.5)
+scale = Vector2(0.90787756, 1.1324404)
+texture = ExtResource("1_w7d22")
+
+[node name="main_menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -19.0
+offset_top = -20.0
+offset_right = 21.0
+offset_bottom = 20.0
+script = ExtResource("1_83s16")
+
+[node name="StartButton" type="Button" parent="main_menu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 15.150001
+anchor_top = 6.3500004
+anchor_right = 15.150001
+anchor_bottom = 6.3500004
+offset_left = -267.0
+offset_top = -60.000015
+offset_right = 267.0
+offset_bottom = 59.999985
+text = "Start Game
+"
+
+[node name="audio" type="AudioStreamPlayer" parent="main_menu" groups=["music"]]
+stream = ExtResource("2_w7d22")
+autoplay = true
+script = ExtResource("4_wc2lj")
